@@ -1,0 +1,26 @@
+Ideen
+    
+    Node
+        GPS optional (wenn angeschlossen, wird weitergegeben)
+        SD-Karte für Konfiguration? --> http://elm-chan.org/fsw/ff/00index_e.html
+        Temperatur
+        Feuchte
+        (Druck)
+    
+    Server
+        Karte erzeugen
+        Blitzevents als maschinenverarbeitbare Liste
+        Rohdaten können auch abgerufen werden
+        Quasi-Echtzeit
+        Nach x Tagen werden keine Events angenommen?
+        Korrelation der Daten, um Störer und Trolle zu filtern
+        
+    Board
+        Franklin-Chip
+        weitere Sensorik
+        Atmel AtMega328
+        ENC-Netzwerkchip
+        5V-Schaltwandler
+        3V3-Dropout (um Störungen im 500kHz-Bereich gering zu halten)
+        SD-Karte
+        
