@@ -23,4 +23,4 @@ Ideen
         5V-Schaltwandler
         3V3-Dropout (um Störungen im 500kHz-Bereich gering zu halten)
         SD-Karte
-        
+        http://www.coilcraft.com/ma5532.cfm
