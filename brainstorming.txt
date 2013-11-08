@@ -3,6 +3,29 @@ Ideen:
 	weit entfernt:
 	Wetterkarten zum kostenlosen Downloaden und daheim Mitmachen.
 	Voraussetzung: Strom und Ethernet!
+	
+	Ist der Ansatz mit dem zentralen Server gut? Es sollte unbedingt vermieden werden "netsplits" zu erzeugen.
+	Also eigentlich wollen wir, dass die Leute nur unseren Server nutzen.
+	Alternativen:
+		Server pollt registrierte nodes --> ist mist, weil die Leute Netzwerkkofigurationen vornehmen müssen
+		peer-to-peer-netzwerk? --> kann ich mir auch nicht sonderlich vorstellen
+		server-Software ist non-free --> widerspricht meiner Überzeugung :-)
+		Auftrennen in zwei Softwareteile:
+			"aggregation"-Server
+				-nimmt alle Sensordaten entgegen
+				-Adresse in Board ist modifizierbar
+				-aber in Grundkonfiguration ist bereits unser Server eingetragen
+				-alternativ könnte die Adresse hart in den Sourcecode kodiert sein
+					--> Problem: wenn der Server umzieht, müssen alle Nodes neu geflasht werden!
+					--> Also entweder auf die SD damit, oder einen SD-Bootloader schreiben, der Updates einflashen kann
+				-Schnittstelle des Servers sollte so offen, kompatibel und verfügbar sein, dass niemand auf die Idee kommt einen eigenen zu betreiben
+			Auswerte-Server
+				-fragt aggregation Server ab und nimmt die eigentliche Korrelation und Triangulation vor
+				-eventuell Partikelschätzer für die Algorithmik nutzen
+				-bzw Stichwort Sensorfusion
+				-Bei diesem Server ist es kein Problem, wenn die Leute eigene betreiben, für das Projektklima ist es vermutlich förderlich und erwünscht
+				-Kann/soll man es erzwingen, dass die auswertende Software auf opensource ist?
+			
 
 Server
 	Karte erzeugen
