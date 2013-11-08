@@ -8,6 +8,6 @@ by Virtex7 and patkan
 
 server: Server-Software
     
-pcb: KiCad-Layout
+pcb: KiCAD-Schematic and Layout
 
 code: Code for the node
