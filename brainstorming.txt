@@ -1,16 +1,42 @@
-Ideen:
+lIdeen:
 
 	weit entfernt:
 	Wetterkarten zum kostenlosen Downloaden und daheim Mitmachen.
 	Voraussetzung: Strom und Ethernet!
+	
+	Ist der Ansatz mit dem zentralen Server gut? Es sollte unbedingt vermieden werden "netsplits" zu erzeugen.
+	Also eigentlich wollen wir, dass die Leute nur unseren Server nutzen.
+	Alternativen:
+		Server pollt registrierte nodes --> ist mist, weil die Leute Netzwerkkofigurationen vornehmen müssen
+		peer-to-peer-netzwerk? --> kann ich mir auch nicht sonderlich vorstellen
+		server-Software ist non-free --> widerspricht meiner Überzeugung :-)
+		Auftrennen in zwei Softwareteile:
+			"aggregation"-Server
+				-nimmt alle Sensordaten entgegen
+				-Adresse in Board ist modifizierbar
+				-aber in Grundkonfiguration ist bereits unser Server eingetragen
+				-alternativ könnte die Adresse hart in den Sourcecode kodiert sein
+					--> Problem: wenn der Server umzieht, müssen alle Nodes neu geflasht werden!
+					--> Also entweder auf die SD damit, oder einen SD-Bootloader schreiben, der Updates einflashen kann
+				-Schnittstelle des Servers sollte so offen, kompatibel und verfügbar sein, dass niemand auf die Idee kommt einen eigenen zu betreiben
+			Auswerte-Server
+				-fragt aggregation Server ab und nimmt die eigentliche Korrelation und Triangulation vor
+				-eventuell Partikelschätzer für die Algorithmik nutzen
+				-bzw Stichwort Sensorfusion
+				-Bei diesem Server ist es kein Problem, wenn die Leute eigene betreiben, für das Projektklima ist es vermutlich förderlich und erwünscht
+				-Kann/soll man es erzwingen, dass die auswertende Software auf opensource ist?
+			
 
 Server
 	Karte erzeugen
 	Blitzevents als maschinenverarbeitbare Liste
-	Rohdaten k�nnen auch abgerufen werden
+	Rohdaten können auch abgerufen werden
+	Leute benennen ihre Station mit einem Namen in der config auf der SD-Karte
+	Ausgabe eines "Feeds" einer einzelnen Sensorstation anhand des Namen (eventuell Name+MAC, um das Problem von Namenskollisionen zu umgehen)
 	Quasi-Echtzeit
-	Nach x Tagen werden keine Events angenommen?
-	Korrelation der Daten, um St�rer und Trolle zu filtern
+	Nach x Tagen werden keine Events angenommen? (zB werden 4 Tage alte Events vom Server nicht mehr angenommen?!)
+	Korrelation der Daten, um Störer und Trolle zu filtern
+	Schnittstelle, die es erlaubt, dass ein Teilnehmer des blitzortung.org-Projekt Daten überträgt
 
 Board
 	Atmel AtMega328P
@@ -19,8 +45,15 @@ Board
 	ENC-Netzwerkchip-Modul
 	DHT11 (OneWire-Temperatur und Feuchte)
 	weitere Sensorik (ggf. Luftdruck, Helligkeit und GPS)
+	Board erkennt angeschlossenen Sensor automatisch und konfiguriert sich dementsprechend
+		-->nicht der beste Sensor, aber ist günstig
+		-->(Kalibrierung muss überprüft werden, ich habe da schon von starken Diskrepanzen zwischen zwei sonst baugleichen Sensoren gelesen)
 	5V-Schaltwandler
 		Eingang ab 7V, bis 24V DC
 		verpolsicher (Dioden, Sicherung)
-	3V3-Dropout(LM317) f�r ENC (um St�rungen im 500kHz-Bereich gering zu halten)
-	�SD-Karte f�r Konfiguration --> http://elm-chan.org/fsw/ff/00index_e.html
+	3V3-Dropout(LM317) für ENC (um Störungen im 500kHz-Bereich gering zu halten)
+	Spannungsversorgung so bauen, dass später auf PoE erweitert werden kann
+	µSD-Karte für Konfiguration --> http://elm-chan.org/fsw/ff/00index_e.html
+	
+	Nachteil: blitzortung.org scheitn mit ihrem System bis zu 2000km abdecken zu können (natürlcih nur bei optimalen Bedingungen)
+	Der Chip kann laut Hersteller nur bis 40km orten. Würde eine bessere Antenne (mehr Gewinn) die Leistung des Systemes verbessern?
