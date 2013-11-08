@@ -26,4 +26,10 @@ In further steps the server could generate maps and lists of lightning events.
 The captured data shall be accessible to everyone without registration.
 New sensors should be able to "join" the network by simply sending data to the server.
 The server will provide the raw sensor data and the correlated values.
-The complete project code and board layout will be distributed under an open source license.
+The complete project code (including microcontroller firmware and aggregation server) and board layout will be distributed under an open source license.
+
+This project tries to be different from blitzortung.org. The code and layout shall be easily accesible.
+The captured data shall be accessible for everyone (even if the user is not providing sensor data).
+The hardware necessary for the absolute basic setup should not cost more than 20€.
+Everyone is free to use the data commercially, if desired.
+However, it should be noted that no one can be taken liable for the correctness of the captured data.
