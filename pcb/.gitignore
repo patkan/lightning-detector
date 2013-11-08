@@ -1,0 +1,4 @@
+# Dateien, die definitiv nicht ins Repo kommen, weil temoräre Dateien!
+
+*.bak
+*.ps
