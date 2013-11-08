@@ -30,13 +30,13 @@ LIBS:opto
 LIBS:atmel
 LIBS:contrib
 LIBS:valves
-EELAYER 24 0
+EELAYER 27 0
 EELAYER END
 $Descr A4 11693 8268
 encoding utf-8
 Sheet 1 1
 Title "Blitzdetektor und Sensorenboard"
-Date "08 Nov 2013"
+Date "8 nov 2013"
 Rev "0.1"
 Comp "Philipp & Patrick IGOR-Design"
 Comment1 ""
@@ -44,17 +44,6 @@ Comment2 ""
 Comment3 ""
 Comment4 ""
 $EndDescr
-$Comp
-L AS3935 U?
-U 1 1 527C2405
-P 4200 5350
-F 0 "U?" H 3700 4900 60  0000 C CNN
-F 1 "AS3935" H 4550 4900 60  0000 C CNN
-F 2 "" H 2650 4600 60  0000 C CNN
-F 3 "" H 2650 4600 60  0000 C CNN
-	1    4200 5350
-	1    0    0    -1  
-$EndComp
 $Comp
 L INDUCTOR L?
 U 1 1 527C244C
@@ -526,4 +515,15 @@ Text Notes 4850 2700 0    60   ~ 0
 LC Filter für ADC
 Text Notes 5200 4050 0    60   ~ 0
 Abblockkondensatoren
+$Comp
+L AS3935 U?
+U 1 1 527C2DDF
+P 4200 5350
+F 0 "U?" H 3700 4900 60  0000 C CNN
+F 1 "AS3935" H 4550 4900 60  0000 C CNN
+F 2 "" H 2650 4600 60  0000 C CNN
+F 3 "" H 2650 4600 60  0000 C CNN
+	1    4200 5350
+	1    0    0    -1  
+$EndComp
 $EndSCHEMATC
