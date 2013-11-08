@@ -36,6 +36,7 @@ Server
 	Quasi-Echtzeit
 	Nach x Tagen werden keine Events angenommen? (zB werden 4 Tage alte Events vom Server nicht mehr angenommen?!)
 	Korrelation der Daten, um Störer und Trolle zu filtern
+	Schnittstelle, die es erlaubt, dass ein Teilnehmer des blitzortung.org-Projekt Daten überträgt
 
 Board
 	Atmel AtMega328P
