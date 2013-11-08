@@ -1,4 +1,4 @@
-lIdeen:
+Ideen:
 
 	weit entfernt:
 	Wetterkarten zum kostenlosen Downloaden und daheim Mitmachen.
@@ -29,7 +29,7 @@ lIdeen:
 
 Server
 	Karte erzeugen
-	Blitzevents als maschinenverarbeitbare Liste
+	Blitzevents als maschinenverarbeitbare, aber menschenlesbare Liste (CSV)
 	Rohdaten können auch abgerufen werden
 	Leute benennen ihre Station mit einem Namen in der config auf der SD-Karte
 	Ausgabe eines "Feeds" einer einzelnen Sensorstation anhand des Namen (eventuell Name+MAC, um das Problem von Namenskollisionen zu umgehen)
@@ -46,14 +46,17 @@ Board
 	DHT11 (OneWire-Temperatur und Feuchte)
 	weitere Sensorik (ggf. Luftdruck, Helligkeit und GPS)
 	Board erkennt angeschlossenen Sensor automatisch und konfiguriert sich dementsprechend
-		-->nicht der beste Sensor, aber ist günstig
-		-->(Kalibrierung muss überprüft werden, ich habe da schon von starken Diskrepanzen zwischen zwei sonst baugleichen Sensoren gelesen)
+		--> nicht der beste Sensor, aber ist günstig
+		--> (Kalibrierung muss überprüft werden, ich habe da schon von starken Diskrepanzen zwischen zwei sonst baugleichen Sensoren gelesen)
 	5V-Schaltwandler
 		Eingang ab 7V, bis 24V DC
 		verpolsicher (Dioden, Sicherung)
 	3V3-Dropout(LM317) für ENC (um Störungen im 500kHz-Bereich gering zu halten)
 	Spannungsversorgung so bauen, dass später auf PoE erweitert werden kann
 	µSD-Karte für Konfiguration --> http://elm-chan.org/fsw/ff/00index_e.html
+		Name
+		Koordinaten (wenn kein GPS vorhanden)
+		Ortsbeschreibung
 	
 	Nachteil: blitzortung.org scheitn mit ihrem System bis zu 2000km abdecken zu können (natürlcih nur bei optimalen Bedingungen)
 	Der Chip kann laut Hersteller nur bis 40km orten. Würde eine bessere Antenne (mehr Gewinn) die Leistung des Systemes verbessern?
