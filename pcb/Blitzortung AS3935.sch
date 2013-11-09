@@ -618,7 +618,7 @@ Text Label 5250 6100 2    60   ~ 0
 scl
 Text Label 5250 5900 2    60   ~ 0
 sda
-Text Notes 4100 6900 0    60   ~ 0
+Text Notes 4100 6800 0    60   ~ 0
 I2C-Mode\nAppNote, Seite 10, Fig. 13
 $Comp
 L CONN_6X2 P?
@@ -1194,7 +1194,7 @@ F 1 "22p" H 8956 3665 40  0000 L CNN
 F 2 "" H 8988 3600 30  0000 C CNN
 F 3 "" H 8950 3750 60  0000 C CNN
 	1    8950 3750
-	0    1    1    0   
+	0    -1   -1   0   
 $EndComp
 $Comp
 L GND #PWR?
@@ -1463,8 +1463,8 @@ Wire Wire Line
 Wire Wire Line
 	9400 2100 9400 2000
 Text Notes 6100 5100 0    60   ~ 0
-Atmega328P TQFP-32
-Text Notes 1350 6650 0    60   ~ 0
+Atmega328P TQFP-32\nTakt: 16MHz, 5VDC
+Text Notes 1350 6750 0    60   ~ 0
 keine Massefläche unter der Antenne\n+ 5mm Keepout darum!\nund keine Digitalleitungen in der Nähe!
 $Comp
 L LED D?
@@ -1599,4 +1599,15 @@ F 3 "" H 4850 5300 60  0000 C CNN
 	1    4850 5300
 	1    0    0    -1  
 $EndComp
+Text Notes 3350 1000 0    60   ~ 0
+Power:\n7 bis 24V DC
+NoConn ~ 7750 4450
+Wire Notes Line
+	3050 6550 3050 5750
+Wire Notes Line
+	3050 5750 1600 5750
+Wire Notes Line
+	1600 5750 1600 6550
+Wire Notes Line
+	1600 6550 3050 6550
 $EndSCHEMATC
