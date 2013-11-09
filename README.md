@@ -30,6 +30,6 @@ The complete project code (including microcontroller firmware and aggregation se
 
 This project tries to be different from blitzortung.org. The code and layout shall be easily accesible.
 The captured data shall be accessible for everyone (even if the user is not providing sensor data).
-The hardware necessary for the absolute basic setup should not cost more than 20€.
+The hardware necessary for the absolute basic setup should not cost more than 25€ - 30€.
 Everyone is free to use the data commercially, if desired.
 However, it should be noted that no one can be taken liable for the correctness of the captured data.
