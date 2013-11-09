@@ -40,7 +40,7 @@ Sheet 1 1
 Title "Blitzdetektor und Sensorenboard"
 Date "8 nov 2013"
 Rev "0.1"
-Comp "Philipp & Patrick IGOR-Design"
+Comp "Virtex7 & patkan - IGOR-Design"
 Comment1 ""
 Comment2 ""
 Comment3 ""
@@ -882,7 +882,7 @@ L DIODESCH D?
 U 1 1 527D3DDA
 P 7400 1500
 F 0 "D?" H 7400 1600 40  0000 C CNN
-F 1 "SB120" H 7400 1400 40  0000 C CNN
+F 1 "SB150" H 7400 1400 40  0000 C CNN
 F 2 "" H 7400 1500 60  0000 C CNN
 F 3 "" H 7400 1500 60  0000 C CNN
 	1    7400 1500
@@ -901,8 +901,8 @@ F 3 "" H 7200 1200 60  0000 C CNN
 $EndComp
 Wire Wire Line
 	7400 1300 7400 1200
-Text Notes 5050 950  0    60   ~ 0
-StepDown Wandler um den LM2675 - nach: Ti-Datenblatt, Seite 10, Fig. 21.
+Text Notes 4500 850  0    60   ~ 0
+StepDown Wandler um den LM2675 - nach: Ti-Datenblatt, Seite 10, Fig. 21.\nWandlerchip und Spule sind bei Reichelt erhältlich: "LM 2675 M5,0" und "L-PIS4720 68µ"
 $Comp
 L +5V #PWR?
 U 1 1 527D40CA
@@ -996,7 +996,7 @@ L DIODESCH D?
 U 1 1 527D434F
 P 4800 1400
 F 0 "D?" H 4800 1500 40  0000 C CNN
-F 1 "SB130" H 4800 1300 40  0000 C CNN
+F 1 "SB150" H 4800 1300 40  0000 C CNN
 F 2 "" H 4800 1400 60  0000 C CNN
 F 3 "" H 4800 1400 60  0000 C CNN
 	1    4800 1400
@@ -1225,7 +1225,7 @@ L ZENER D?
 U 1 1 527D565D
 P 4500 1400
 F 0 "D?" H 4500 1500 50  0000 C CNN
-F 1 "p6ke28a" H 4500 1300 40  0000 C CNN
+F 1 "p6ke39aSMD" H 4500 1300 40  0000 C CNN
 F 2 "" H 4500 1400 60  0000 C CNN
 F 3 "" H 4500 1400 60  0000 C CNN
 	1    4500 1400
@@ -1249,7 +1249,7 @@ L ZENER D?
 U 1 1 527D5730
 P 8000 1500
 F 0 "D?" H 8000 1600 50  0000 C CNN
-F 1 "p6ke5.1a" H 8000 1400 40  0000 C CNN
+F 1 "p6ke6,8aSMD" H 8000 1400 40  0000 C CNN
 F 2 "" H 8000 1500 60  0000 C CNN
 F 3 "" H 8000 1500 60  0000 C CNN
 	1    8000 1500
@@ -1276,7 +1276,7 @@ L ZENER D?
 U 1 1 527D5942
 P 10100 1500
 F 0 "D?" H 10100 1600 50  0000 C CNN
-F 1 "p6ke3.6a" H 10100 1400 40  0000 C CNN
+F 1 "zf3,6SMD" H 10100 1400 40  0000 C CNN
 F 2 "" H 10100 1500 60  0000 C CNN
 F 3 "" H 10100 1500 60  0000 C CNN
 	1    10100 1500
@@ -1599,8 +1599,8 @@ F 3 "" H 4850 5300 60  0000 C CNN
 	1    4850 5300
 	1    0    0    -1  
 $EndComp
-Text Notes 3350 1000 0    60   ~ 0
-Power:\n7 bis 24V DC
+Text Notes 3350 900  0    60   ~ 0
+Power:\n7 bis 40V DC\nverpolgeschützt
 NoConn ~ 7750 4450
 Wire Notes Line
 	3050 6550 3050 5750
@@ -1610,4 +1610,6 @@ Wire Notes Line
 	1600 5750 1600 6550
 Wire Notes Line
 	1600 6550 3050 6550
+Text Notes 7000 6650 0    60   ~ 0
+Legende:\nalle Bauteile - soweit nicht anders angegeben SMD\nWiderstände und kleine Kondensatoren: 0805\nTantal: nach Ermessen, Leistungshalbleiter entsprechend größer
 $EndSCHEMATC
