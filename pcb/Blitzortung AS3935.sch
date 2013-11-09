@@ -31,14 +31,13 @@ LIBS:opto
 LIBS:atmel
 LIBS:contrib
 LIBS:valves
-LIBS:Blitzortung AS3935-cache
-EELAYER 24 0
+EELAYER 27 0
 EELAYER END
 $Descr A4 11693 8268
 encoding utf-8
 Sheet 1 1
 Title "Blitzdetektor und Sensorenboard"
-Date "8 nov 2013"
+Date "9 nov 2013"
 Rev "0.1"
 Comp "Virtex7 & patkan - IGOR-Design"
 Comment1 ""
@@ -1612,4 +1611,66 @@ Wire Notes Line
 	1600 6550 3050 6550
 Text Notes 7000 6650 0    60   ~ 0
 Legende:\nalle Bauteile - soweit nicht anders angegeben SMD\nWiderstände und kleine Kondensatoren: 0805\nTantal: nach Ermessen, Leistungshalbleiter entsprechend größer
+Text Notes 800  3800 0    60   ~ 0
+Foto-Spannungsteiler
+$Comp
+L +3,3V #PWR?
+U 1 1 527E5CE7
+P 1050 4000
+F 0 "#PWR?" H 1050 3960 30  0001 C CNN
+F 1 "+3,3V" H 1050 4110 30  0000 C CNN
+F 2 "" H 1050 4000 60  0000 C CNN
+F 3 "" H 1050 4000 60  0000 C CNN
+	1    1050 4000
+	1    0    0    -1  
+$EndComp
+$Comp
+L GND #PWR?
+U 1 1 527E5CED
+P 1050 5100
+F 0 "#PWR?" H 1050 5100 30  0001 C CNN
+F 1 "GND" H 1050 5030 30  0001 C CNN
+F 2 "" H 1050 5100 60  0000 C CNN
+F 3 "" H 1050 5100 60  0000 C CNN
+	1    1050 5100
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	1050 4000 1050 4050
+$Comp
+L R R?
+U 1 1 527E5D62
+P 1050 4300
+F 0 "R?" V 1130 4300 40  0000 C CNN
+F 1 "R" V 1057 4301 40  0000 C CNN
+F 2 "~" V 980 4300 30  0000 C CNN
+F 3 "~" H 1050 4300 30  0000 C CNN
+	1    1050 4300
+	1    0    0    -1  
+$EndComp
+$Comp
+L R R?
+U 1 1 527E5D85
+P 1050 4800
+F 0 "R?" V 1130 4800 40  0000 C CNN
+F 1 "R" V 1057 4801 40  0000 C CNN
+F 2 "~" V 980 4800 30  0000 C CNN
+F 3 "~" H 1050 4800 30  0000 C CNN
+	1    1050 4800
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	1050 5050 1050 5100
+Text Notes 1200 4350 0    60   ~ 0
+LDR
+Text Label 1350 4550 2    60   ~ 0
+Vldr
+Wire Wire Line
+	1050 4550 1350 4550
+Text Label 8050 3400 2    60   ~ 0
+Vldr
+Wire Wire Line
+	7750 3400 8050 3400
+Text Notes 1300 4700 0    60   Italic 12
+TODO: Werte für LDR ermitteln und Widerstand dementsprechend wählen\nSpannungsteiler evtl. an AVCC anschließen? (statt 3V3)
 $EndSCHEMATC
