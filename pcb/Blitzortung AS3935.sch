@@ -1672,6 +1672,33 @@ Text Label 8050 3400 2    60   ~ 0
 Vldr
 Wire Wire Line
 	7750 3400 8050 3400
-Text Notes 1300 4700 0    60   Italic 12
-TODO: Werte für LDR ermitteln und Widerstand dementsprechend wählen\nSpannungsteiler evtl. an AVCC anschließen? (statt 3V3)
+Text Notes 1400 4550 0    60   Italic 12
+TODO: Werte für LDR ermitteln und\nWiderstand dementsprechend wählen
+$Comp
+L C C?
+U 1 1 527E6F1B
+P 1250 4800
+F 0 "C?" H 1250 4900 40  0000 L CNN
+F 1 "100n" H 1256 4715 40  0000 L CNN
+F 2 "~" H 1288 4650 30  0000 C CNN
+F 3 "~" H 1250 4800 60  0000 C CNN
+	1    1250 4800
+	1    0    0    -1  
+$EndComp
+$Comp
+L GND #PWR?
+U 1 1 527E6F3E
+P 1250 5100
+F 0 "#PWR?" H 1250 5100 30  0001 C CNN
+F 1 "GND" H 1250 5030 30  0001 C CNN
+F 2 "" H 1250 5100 60  0000 C CNN
+F 3 "" H 1250 5100 60  0000 C CNN
+	1    1250 5100
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	1250 5000 1250 5100
+Wire Wire Line
+	1250 4550 1250 4600
+Connection ~ 1250 4550
 $EndSCHEMATC
