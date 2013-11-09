@@ -32,7 +32,7 @@ LIBS:atmel
 LIBS:contrib
 LIBS:valves
 LIBS:Blitzortung AS3935-cache
-EELAYER 27 0
+EELAYER 24 0
 EELAYER END
 $Descr A4 11693 8268
 encoding utf-8
@@ -1672,6 +1672,28 @@ Text Label 8050 3400 2    60   ~ 0
 Vldr
 Wire Wire Line
 	7750 3400 8050 3400
-Text Notes 1300 4700 0    60   Italic 12
+Text Notes 1550 4700 0    60   Italic 12
 TODO: Werte für LDR ermitteln und Widerstand dementsprechend wählen\nSpannungsteiler evtl. an AVCC anschließen? (statt 3V3)
+$Comp
+L C C?
+U 1 1 527E6F55
+P 1350 4750
+F 0 "C?" H 1350 4850 40  0000 L CNN
+F 1 "100n" H 1356 4665 40  0000 L CNN
+F 2 "" H 1388 4600 30  0000 C CNN
+F 3 "" H 1350 4750 60  0000 C CNN
+	1    1350 4750
+	1    0    0    -1  
+$EndComp
+$Comp
+L GND #PWR?
+U 1 1 527E6F62
+P 1350 4950
+F 0 "#PWR?" H 1350 4950 30  0001 C CNN
+F 1 "GND" H 1350 4880 30  0001 C CNN
+F 2 "" H 1350 4950 60  0000 C CNN
+F 3 "" H 1350 4950 60  0000 C CNN
+	1    1350 4950
+	1    0    0    -1  
+$EndComp
 $EndSCHEMATC
