@@ -32,7 +32,7 @@ LIBS:atmel
 LIBS:contrib
 LIBS:valves
 LIBS:Blitzortung AS3935-cache
-EELAYER 24 0
+EELAYER 27 0
 EELAYER END
 $Descr A4 11693 8268
 encoding utf-8
@@ -1612,88 +1612,88 @@ Wire Notes Line
 	1600 6550 3050 6550
 Text Notes 7000 6650 0    60   ~ 0
 Legende:\nalle Bauteile - soweit nicht anders angegeben SMD\nWiderstände und kleine Kondensatoren: 0805\nTantal: nach Ermessen, Leistungshalbleiter entsprechend größer
-Text Notes 800  3800 0    60   ~ 0
+Text Notes 650  3600 0    60   ~ 0
 Foto-Spannungsteiler
 $Comp
 L +3,3V #PWR?
 U 1 1 527E5CE7
-P 1050 4000
-F 0 "#PWR?" H 1050 3960 30  0001 C CNN
-F 1 "+3,3V" H 1050 4110 30  0000 C CNN
-F 2 "" H 1050 4000 60  0000 C CNN
-F 3 "" H 1050 4000 60  0000 C CNN
-	1    1050 4000
+P 900 3800
+F 0 "#PWR?" H 900 3760 30  0001 C CNN
+F 1 "+3,3V" H 900 3910 30  0000 C CNN
+F 2 "" H 900 3800 60  0000 C CNN
+F 3 "" H 900 3800 60  0000 C CNN
+	1    900  3800
 	1    0    0    -1  
 $EndComp
 $Comp
 L GND #PWR?
 U 1 1 527E5CED
-P 1050 5100
-F 0 "#PWR?" H 1050 5100 30  0001 C CNN
-F 1 "GND" H 1050 5030 30  0001 C CNN
-F 2 "" H 1050 5100 60  0000 C CNN
-F 3 "" H 1050 5100 60  0000 C CNN
-	1    1050 5100
+P 900 4900
+F 0 "#PWR?" H 900 4900 30  0001 C CNN
+F 1 "GND" H 900 4830 30  0001 C CNN
+F 2 "" H 900 4900 60  0000 C CNN
+F 3 "" H 900 4900 60  0000 C CNN
+	1    900  4900
 	1    0    0    -1  
 $EndComp
 Wire Wire Line
-	1050 4000 1050 4050
+	900  3800 900  3850
 $Comp
 L R R?
 U 1 1 527E5D62
-P 1050 4300
-F 0 "R?" V 1130 4300 40  0000 C CNN
-F 1 "LDR" V 1057 4301 40  0000 C CNN
-F 2 "~" V 980 4300 30  0000 C CNN
-F 3 "~" H 1050 4300 30  0000 C CNN
-	1    1050 4300
+P 900 4100
+F 0 "R?" V 980 4100 40  0000 C CNN
+F 1 "LDR" V 907 4101 40  0000 C CNN
+F 2 "~" V 830 4100 30  0000 C CNN
+F 3 "~" H 900 4100 30  0000 C CNN
+	1    900  4100
 	1    0    0    -1  
 $EndComp
 $Comp
 L R R?
 U 1 1 527E5D85
-P 1050 4800
-F 0 "R?" V 1130 4800 40  0000 C CNN
-F 1 "R" V 1057 4801 40  0000 C CNN
-F 2 "~" V 980 4800 30  0000 C CNN
-F 3 "~" H 1050 4800 30  0000 C CNN
-	1    1050 4800
+P 900 4600
+F 0 "R?" V 980 4600 40  0000 C CNN
+F 1 "R" V 907 4601 40  0000 C CNN
+F 2 "~" V 830 4600 30  0000 C CNN
+F 3 "~" H 900 4600 30  0000 C CNN
+	1    900  4600
 	1    0    0    -1  
 $EndComp
 Wire Wire Line
-	1050 5050 1050 5100
-Text Notes 1200 4350 0    60   ~ 0
+	900  4850 900  4900
+Text Notes 1050 4150 0    60   ~ 0
 LDR
-Text Label 1350 4550 2    60   ~ 0
+Text Label 1200 4350 2    60   ~ 0
 Vldr
 Wire Wire Line
-	1050 4550 1350 4550
+	900  4350 1200 4350
 Text Label 8050 3400 2    60   ~ 0
 Vldr
 Wire Wire Line
 	7750 3400 8050 3400
-Text Notes 1550 4700 0    60   Italic 12
-TODO: Werte für LDR ermitteln und Widerstand dementsprechend wählen\nSpannungsteiler evtl. an AVCC anschließen? (statt 3V3)
+Text Notes 1400 4450 0    60   Italic 12
+TODO: Werte für LDR ermitteln und\nWiderstand dementsprechend wählen
 $Comp
 L C C?
 U 1 1 527E6F55
-P 1350 4750
-F 0 "C?" H 1350 4850 40  0000 L CNN
-F 1 "100n" H 1356 4665 40  0000 L CNN
-F 2 "" H 1388 4600 30  0000 C CNN
-F 3 "" H 1350 4750 60  0000 C CNN
-	1    1350 4750
+P 1150 4600
+F 0 "C?" H 1150 4700 40  0000 L CNN
+F 1 "100n" H 1156 4515 40  0000 L CNN
+F 2 "" H 1188 4450 30  0000 C CNN
+F 3 "" H 1150 4600 60  0000 C CNN
+	1    1150 4600
 	1    0    0    -1  
 $EndComp
 $Comp
 L GND #PWR?
 U 1 1 527E6F62
-P 1350 4950
-F 0 "#PWR?" H 1350 4950 30  0001 C CNN
-F 1 "GND" H 1350 4880 30  0001 C CNN
-F 2 "" H 1350 4950 60  0000 C CNN
-F 3 "" H 1350 4950 60  0000 C CNN
-	1    1350 4950
+P 1150 4900
+F 0 "#PWR?" H 1150 4900 30  0001 C CNN
+F 1 "GND" H 1150 4830 30  0001 C CNN
+F 2 "" H 1150 4900 60  0000 C CNN
+F 3 "" H 1150 4900 60  0000 C CNN
+	1    1150 4900
 	1    0    0    -1  
 $EndComp
 $Comp
@@ -1734,4 +1734,11 @@ Wire Wire Line
 	8450 2650 7750 2650
 Wire Wire Line
 	7750 2750 8450 2750
+Text Notes 2150 5350 0    60   ~ 0
+Blitzdetektor
+Wire Wire Line
+	1150 4800 1150 4900
+Wire Wire Line
+	1150 4400 1150 4350
+Connection ~ 1150 4350
 $EndSCHEMATC
