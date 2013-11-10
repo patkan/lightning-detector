@@ -2,3 +2,9 @@
 
 *.bak
 *.ps
+
+#Autosave von KICAD
+_autosave*
+
+#lib-chache
+*-cache.lib
