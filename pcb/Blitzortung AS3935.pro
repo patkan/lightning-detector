@@ -1,6 +1,6 @@
-update=Fr 08 Nov 2013 20:38:37 CET
+update=So 10 Nov 2013 01:12:37 CET
 version=1
-last_client=kicad
+last_client=eeschema
 [cvpcb]
 version=1
 NetIExt=net
@@ -43,6 +43,8 @@ LibName13=led
 LibName14=dip_sockets
 LibName15=pga_sockets
 LibName16=valves
+[general]
+version=1
 [eeschema]
 version=1
 PageLayoutDescrFile=
@@ -87,5 +89,5 @@ LibName29=opto
 LibName30=atmel
 LibName31=contrib
 LibName32=valves
-[general]
-version=1
+LibName33=microSD-dm3d-sf
+LibName34=ds1307_pcf8583
