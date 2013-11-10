@@ -1,11 +1,6 @@
-update=So 10 Nov 2013 01:12:37 CET
+update=So 10 Nov 2013 15:33:46 CET
 version=1
-last_client=eeschema
-[cvpcb]
-version=1
-NetIExt=net
-[cvpcb/libraries]
-EquName1=devcms
+last_client=cvpcb
 [pcbnew]
 version=1
 LastNetListRead=
@@ -26,7 +21,6 @@ DrawSegmentWidth=0.200000000000
 BoardOutlineThickness=0.100000000000
 ModuleOutlineThickness=0.150000000000
 [pcbnew/libraries]
-LibDir=
 LibName1=sockets
 LibName2=connect
 LibName3=discret
@@ -34,15 +28,26 @@ LibName4=pin_array
 LibName5=divers
 LibName6=smd_capacitors
 LibName7=smd_resistors
-LibName8=smd_crystal&oscillator
-LibName9=smd_dil
-LibName10=smd_transistors
-LibName11=libcms
-LibName12=display
-LibName13=led
-LibName14=dip_sockets
-LibName15=pga_sockets
-LibName16=valves
+LibName8=smd_transistors
+LibName9=libcms
+LibName10=led
+LibName11=dip_sockets
+LibName12=pga_sockets
+LibName13=smd_crystal_and_oscillator
+LibName14=smd_lqfp
+LibName15=smd_soic_packages
+LibName16=smd_ssop_packages
+LibName17=Crystals_RevB_20Apr2013
+LibName18=SOT23_SOT143_SOT143R_TSOT6_MK06A_SC70-6_Housing_26Jul2012
+LibName19=TantalCapacitors_SMD_RevA_28Aug2012
+LibName20=Dioden_SMD_RevA_31May2013
+LibName21=Dioden_ThroughHole_RevC
+LibName22=Elko_ThroughHole_RevB-3_30Dec2011
+LibName23=inductors
+LibName24=Choke_SMD_RevB_28Dez2012
+LibName25=Antenne_MA5532-AE
+LibName26=Resistor_ThroughHole_RevB_22Apr2011
+LibDir=
 [general]
 version=1
 [eeschema]
@@ -91,3 +96,8 @@ LibName31=contrib
 LibName32=valves
 LibName33=microSD-dm3d-sf
 LibName34=ds1307_pcf8583
+[cvpcb]
+version=1
+NetIExt=net
+[cvpcb/libraries]
+EquName1=devcms
