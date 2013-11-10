@@ -1,4 +1,4 @@
-Cmp-Mod V01 Created by CvPcb (2013-10-15 BZR 4389)-product date = So 10 Nov 2013 17:02:15 CET
+Cmp-Mod V01 Created by CvPcb (2013-10-15 BZR 4389)-product date = Mo 11 Nov 2013 00:33:49 CET
 
 BeginCmp
 TimeStamp = /527EE94E;
@@ -529,7 +529,7 @@ BeginCmp
 TimeStamp = /527C2DDF;
 Reference = U2;
 ValeurCmp = AS3935;
-IdModule  = ;
+IdModule  = QFN-16-P;
 EndCmp
 
 BeginCmp

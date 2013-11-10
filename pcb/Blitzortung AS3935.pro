@@ -1,4 +1,4 @@
-update=So 10 Nov 2013 16:14:54 CET
+update=Mo 11 Nov 2013 00:33:32 CET
 version=1
 last_client=cvpcb
 [pcbnew]
@@ -50,6 +50,7 @@ LibName26=Resistor_ThroughHole_RevB_22Apr2011
 LibName27=Battery_KHZ_20PCB-V
 LibName28=microSD-dm3d-sf
 LibName29=TO220
+LibName30=QFN-16
 LibDir=
 [general]
 version=1
