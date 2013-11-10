@@ -1,7 +1,7 @@
 lightning-detector
 ==================
 
-Lightning Detector ethernet sensor node and server based on AS3935
+Lightning Detector ethernet sensor node and server based on AS3935 and ATmega328
 
 by Virtex7 and patkan
 
