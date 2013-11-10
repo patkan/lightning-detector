@@ -1,4 +1,4 @@
-update=So 10 Nov 2013 15:33:46 CET
+update=So 10 Nov 2013 16:08:44 CET
 version=1
 last_client=cvpcb
 [pcbnew]
@@ -47,6 +47,9 @@ LibName23=inductors
 LibName24=Choke_SMD_RevB_28Dez2012
 LibName25=Antenne_MA5532-AE
 LibName26=Resistor_ThroughHole_RevB_22Apr2011
+LibName27=Battery_KHZ_20PCB-V
+LibName28=microSD-dm3d-sf
+LibName29=Transistor_TO-220_RevB_03Sep2012
 LibDir=
 [general]
 version=1
