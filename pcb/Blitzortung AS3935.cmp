@@ -1,4 +1,4 @@
-Cmp-Mod V01 Created by CvPcb (2013-10-15 BZR 4389)-product date = So 10 Nov 2013 16:21:41 CET
+Cmp-Mod V01 Created by CvPcb (2013-10-15 BZR 4389)-product date = So 10 Nov 2013 17:02:15 CET
 
 BeginCmp
 TimeStamp = /527EE94E;
@@ -253,6 +253,13 @@ IdModule  = Diode-MiniMELF_Handsoldering_RevA_27July2010;
 EndCmp
 
 BeginCmp
+TimeStamp = /527FB48D;
+Reference = D9;
+ValeurCmp = BPW34;
+IdModule  = ;
+EndCmp
+
+BeginCmp
 TimeStamp = /527D4479;
 Reference = F1;
 ValeurCmp = MT 1A;
@@ -376,20 +383,6 @@ TimeStamp = /527EA824;
 Reference = Q3;
 ValeurCmp = IRLML6401;
 IdModule  = SOT23GDS;
-EndCmp
-
-BeginCmp
-TimeStamp = /527E5D62;
-Reference = R1;
-ValeurCmp = LDR;
-IdModule  = Resistor_Vertical_RM5mm_22Apr2011;
-EndCmp
-
-BeginCmp
-TimeStamp = /527E5D85;
-Reference = R2;
-ValeurCmp = R;
-IdModule  = SM0805;
 EndCmp
 
 BeginCmp
