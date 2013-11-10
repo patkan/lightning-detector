@@ -1,4 +1,4 @@
-update=So 10 Nov 2013 16:08:44 CET
+update=So 10 Nov 2013 16:14:54 CET
 version=1
 last_client=cvpcb
 [pcbnew]
@@ -49,7 +49,7 @@ LibName25=Antenne_MA5532-AE
 LibName26=Resistor_ThroughHole_RevB_22Apr2011
 LibName27=Battery_KHZ_20PCB-V
 LibName28=microSD-dm3d-sf
-LibName29=Transistor_TO-220_RevB_03Sep2012
+LibName29=TO220
 LibDir=
 [general]
 version=1
