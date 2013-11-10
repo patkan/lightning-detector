@@ -1691,17 +1691,6 @@ Text Label 2700 1650 2    60   ~ 0
 mess5V
 Text Label 3400 1650 2    60   ~ 0
 mess3,3V
-$Comp
-L DM3D-SF HR1
-U 1 1 527ED584
-P 800 3350
-F 0 "HR1" H 700 3850 60  0000 C CNN
-F 1 "DM3D-SF" H 800 2850 60  0000 C CNN
-F 2 "" H 150 2800 60  0000 C CNN
-F 3 "" H 150 2800 60  0000 C CNN
-	1    800  3350
-	1    0    0    -1  
-$EndComp
 Text Notes 600  4000 0    60   ~ 0
 µSD-Karte für:\nConfig\nevtl. Blitzdaten\n
 $Comp
@@ -1801,24 +1790,24 @@ $EndComp
 $Comp
 L MOSFET_P Q1
 U 1 1 527EDF18
-P 1300 2650
-F 0 "Q1" H 1300 2840 60  0000 R CNN
-F 1 "IRLML6401" H 1300 2470 60  0000 R CNN
-F 2 "" H 1300 2650 60  0000 C CNN
-F 3 "" H 1300 2650 60  0000 C CNN
-	1    1300 2650
+P 1300 2550
+F 0 "Q1" H 1300 2740 60  0000 R CNN
+F 1 "IRLML6401" H 1300 2370 60  0000 R CNN
+F 2 "" H 1300 2550 60  0000 C CNN
+F 3 "" H 1300 2550 60  0000 C CNN
+	1    1300 2550
 	-1   0    0    1   
 $EndComp
 $Comp
 L +3,3V #PWR078
 U 1 1 527EDF23
-P 1200 2450
-F 0 "#PWR078" H 1200 2410 30  0001 C CNN
-F 1 "+3,3V" H 1200 2560 30  0000 C CNN
-F 2 "" H 1200 2450 60  0000 C CNN
-F 3 "" H 1200 2450 60  0000 C CNN
-	1    1200 2450
-	1    0    0    -1  
+P 1200 2350
+F 0 "#PWR078" H 1200 2310 30  0001 C CNN
+F 1 "+3,3V" H 1200 2460 30  0000 C CNN
+F 2 "" H 1200 2350 60  0000 C CNN
+F 3 "" H 1200 2350 60  0000 C CNN
+	1    1200 2350
+	0    -1   -1   0   
 $EndComp
 $Comp
 L DS1307 IC1
@@ -1870,7 +1859,7 @@ F 3 "" H 3100 4000 60  0000 C CNN
 $EndComp
 Text Label 8450 2550 2    60   ~ 0
 sd3,3V
-Text Label 1900 2650 2    60   ~ 0
+Text Label 1900 2550 2    60   ~ 0
 sd3,3V
 $Comp
 L BATTERY BT1
@@ -2325,7 +2314,7 @@ Wire Wire Line
 Wire Wire Line
 	8450 2550 7750 2550
 Wire Wire Line
-	1900 2650 1500 2650
+	1900 2550 1500 2550
 Wire Wire Line
 	4600 4300 4600 5200
 Wire Wire Line
@@ -2337,15 +2326,11 @@ Wire Wire Line
 Wire Wire Line
 	1500 3100 1200 3100
 Wire Wire Line
-	1200 2950 1200 2850
-Wire Wire Line
 	1200 3600 1550 3600
 Wire Wire Line
 	1200 3500 1600 3500
 Wire Wire Line
 	1200 3400 1600 3400
-Wire Wire Line
-	1200 2950 2150 2950
 Wire Wire Line
 	2150 2650 2150 3150
 Wire Wire Line
@@ -2367,7 +2352,6 @@ Wire Wire Line
 	2250 4900 2250 3150
 Wire Wire Line
 	2250 3150 2150 3150
-Connection ~ 2150 2950
 Wire Wire Line
 	2250 4450 2200 4450
 Connection ~ 2250 3250
@@ -2471,4 +2455,25 @@ Text Label 8200 3250 2    60   ~ 0
 xtal2
 Connection ~ 8200 3150
 Connection ~ 8200 3250
+$Comp
+L DM3D-SF HR1
+U 1 1 527FA39E
+P 800 3250
+F 0 "HR1" H 700 3650 60  0000 C CNN
+F 1 "DM3D-SF" H 800 2650 60  0000 C CNN
+F 2 "" H 150 2600 60  0000 C CNN
+F 3 "" H 150 2600 60  0000 C CNN
+	1    800  3250
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	1200 2950 1500 2950
+Wire Wire Line
+	1200 2850 1200 2750
+Text Label 1500 2950 2    60   ~ 0
+IRQ_SD
+Wire Wire Line
+	1200 2750 2150 2750
+Connection ~ 2150 2750
+Connection ~ 2150 2950
 $EndSCHEMATC
