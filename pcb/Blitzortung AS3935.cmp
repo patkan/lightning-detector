@@ -1,4 +1,4 @@
-Cmp-Mod V01 Created by CvPcb (2013-10-15 BZR 4389)-product date = Mo 11 Nov 2013 00:33:49 CET
+Cmp-Mod V01 Created by CvPcb (2013-10-15 BZR 4389)-product date = Sa 16 Nov 2013 21:46:33 CET
 
 BeginCmp
 TimeStamp = /527EE94E;
@@ -218,13 +218,6 @@ IdModule  = Diode-SMB_Handsoldering_RevA_27July2010;
 EndCmp
 
 BeginCmp
-TimeStamp = /527D7B08;
-Reference = D4;
-ValeurCmp = LED;
-IdModule  = LED-0805;
-EndCmp
-
-BeginCmp
 TimeStamp = /527D5730;
 Reference = D5;
 ValeurCmp = p6ke6,8aSMD;
@@ -256,7 +249,7 @@ BeginCmp
 TimeStamp = /527FB48D;
 Reference = D9;
 ValeurCmp = BPW34;
-IdModule  = ;
+IdModule  = GS2;
 EndCmp
 
 BeginCmp
@@ -284,7 +277,7 @@ BeginCmp
 TimeStamp = /527EE0CA;
 Reference = IC1;
 ValeurCmp = DS1307;
-IdModule  = ds1307_pcf8583-DIL08;
+IdModule  = SOIC-8_N;
 EndCmp
 
 BeginCmp
@@ -292,6 +285,13 @@ TimeStamp = /527C27B5;
 Reference = IC2;
 ValeurCmp = ATMEGA328P-A;
 IdModule  = TQFP32;
+EndCmp
+
+BeginCmp
+TimeStamp = /5287CC6B;
+Reference = K1;
+ValeurCmp = CONN_3_DHT;
+IdModule  = GS3;
 EndCmp
 
 BeginCmp
@@ -337,13 +337,6 @@ IdModule  = PIN_ARRAY_4x1;
 EndCmp
 
 BeginCmp
-TimeStamp = /527D6A10;
-Reference = P3;
-ValeurCmp = CONN_4_DHT;
-IdModule  = PIN_ARRAY_4x1;
-EndCmp
-
-BeginCmp
 TimeStamp = /527D6067;
 Reference = P4;
 ValeurCmp = CONN_4_I2C;
@@ -362,6 +355,34 @@ TimeStamp = /527D057B;
 Reference = P6;
 ValeurCmp = CONN_6X2_ENC;
 IdModule  = pin_array_6x2;
+EndCmp
+
+BeginCmp
+TimeStamp = /5287A9E9;
+Reference = P7;
+ValeurCmp = CONN_1;
+IdModule  = 1pin;
+EndCmp
+
+BeginCmp
+TimeStamp = /5287A9FB;
+Reference = P8;
+ValeurCmp = CONN_1;
+IdModule  = 1pin;
+EndCmp
+
+BeginCmp
+TimeStamp = /5287AA06;
+Reference = P9;
+ValeurCmp = CONN_1;
+IdModule  = 1pin;
+EndCmp
+
+BeginCmp
+TimeStamp = /5287AA11;
+Reference = P10;
+ValeurCmp = CONN_1;
+IdModule  = 1pin;
 EndCmp
 
 BeginCmp
@@ -463,13 +484,6 @@ IdModule  = SM0805;
 EndCmp
 
 BeginCmp
-TimeStamp = /527D7B32;
-Reference = R14;
-ValeurCmp = 220;
-IdModule  = SM0805;
-EndCmp
-
-BeginCmp
 TimeStamp = /527D7B5D;
 Reference = R15;
 ValeurCmp = 220;
@@ -543,7 +557,7 @@ BeginCmp
 TimeStamp = /527EE276;
 Reference = X1;
 ValeurCmp = Uhrenquarz;
-IdModule  = ;
+IdModule  = GS2;
 EndCmp
 
 BeginCmp
