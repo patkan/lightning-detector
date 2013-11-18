@@ -58,6 +58,8 @@ Board
 		Koordinaten (wenn kein GPS vorhanden)
 		Ortsbeschreibung
 		Ethernet-Konfiguration (DHCP, MAC, IP, Gateway, NTP)
+	Wie teuer wäre eine Ergänzung um einen Magnetfeldsensor, der empfindlich genug ist die Schwankungen des Erdmagnetfeldes auzuzeichnen?
+		Frage in diesem Kontext: Wie stark sind diese Schwankungen und in welcher Größenprdung liegt das Feld selbst?
 	
 	Nachteil: blitzortung.org scheitn mit ihrem System bis zu 2000km abdecken zu können (natürlcih nur bei optimalen Bedingungen)
 	Der Chip kann laut Hersteller nur bis 40km orten. Würde eine bessere Antenne (mehr Gewinn) die Leistung des Systemes verbessern?
