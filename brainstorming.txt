@@ -68,3 +68,6 @@ Board
 	
 	Nachteil: blitzortung.org scheitn mit ihrem System bis zu 2000km abdecken zu können (natürlcih nur bei optimalen Bedingungen)
 	Der Chip kann laut Hersteller nur bis 40km orten. Würde eine bessere Antenne (mehr Gewinn) die Leistung des Systemes verbessern?
+	
+	WICHTIG: Die Platine muss übermitteln, ob ein GPS installiert ist. Wie groß ist der RTC-Jitter? Wenn das klein ist oder von einer GPS-Clock gestützt wird,
+		kann zusätzlich zur Amplituden-basierten Ortung auch eine Time-of-Arrival-Ortung durchgeführt werden. Das dann aber nur mit den GPS-Stationen, da bei den anderen keine exakte Timebase vorliegt.
